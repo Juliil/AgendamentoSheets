@@ -79,7 +79,7 @@ function resetByRangesList_(
 }
 
 function sendEmail() {
-  var farma = SpreadsheetApp.getUi().prompt("Digite o nome da farma conforme a ABA da planilha informado abaixo").getResponseText();
+  var farma = SpreadsheetApp.getUi().prompt("Digite o nome conforme a ABA da planilha informado abaixo").getResponseText();
   var response =  SpreadsheetApp.getUi().prompt("Digite o email para onde será enviado a cópia").getResponseText();
   
   const ss = SpreadsheetApp.getActiveSpreadsheet();
