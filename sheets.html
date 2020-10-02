@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<base target="_top">
+	</head>
+	<body>
+
+		<div>
+			<div></div>
+			<div>
+				<h1 style="color:blue;max-width:600px;font-size:24px;"><?= h1 ?> - <?= farma ?></h1>
+                 <table style="border-spacing:0px;">
+					<thead>
+					<tr style="color:blue;font-size:16px;font-weight:bold;max-width:600px;">
+						<td><?= date ?></td><td><?= hour ?></td><td><?= name ?></td><td><?= cpf ?></td><td><?= contact ?></td>
+					</tr>
+					</thead>
+
+					<tbody>
+					
+                        <? tableRangeValues.forEach((r,i) => { 
+                           let color;
+                           if(i % 2 === 0) { color = "silver" } else { color = "light-grey" }
+                        ?> 
+                         <tr style="background-color:<?= color ?>;">
+                           <td><?= r[0] ?></td><td style="text-align:right;padding:2px;"><?= r[1] ?></td><td style="text-align:right;padding:2px;"><?= r[2] ?></td><td style="text-align:right;padding:2px;"><?= r[3] ?></td><td style="text-align:right;padding:2px;"><?= r[4] ?></td>
+                         </tr>
+                        <? }) ?>
+                   
+					</tbody>
+				 </table>
+			</div>
+
+		</div>
+
+
+	</body>
+</html>
