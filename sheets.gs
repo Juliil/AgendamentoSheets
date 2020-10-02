@@ -111,5 +111,5 @@ function sendEmail() {
 
   const htmlForEmail = htmlTemplate.evaluate().getContent();
 
-  GmailApp.sendEmail(response, "Planilha - Teste Exame de Covid-19", "Cópia de agendamento", { htmlBody: htmlForEmail });
+  GmailApp.sendEmail(response, "Planilha - Agendamento", "Cópia de agendamento", { htmlBody: htmlForEmail });
 }
