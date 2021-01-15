@@ -17,3 +17,9 @@ acionar o botão, enviar uam cópia do conteúdo para seu email.
 
 # sendEmail
 + Envio de email com popup de inserção do email e pagina de planilha escolhida. +
+
+
+
+# Branch UpdateSheets é atual
++ Inclusão de novas funções junto a estoques.
++ nova função stock_ e stockadd_

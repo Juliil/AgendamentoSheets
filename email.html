@@ -14,7 +14,12 @@
                  <table style="border-spacing:0px;">
 					<thead>
 					<tr style="color:blue;font-size:16px;font-weight:bold;max-width:600px;">
-						<td><?= date ?></td><td><?= hour ?></td><td><?= name ?></td><td><?= cpf ?></td><td><?= contact ?></td>
+						<td><?= date ?></td><td style="text-align:center;"><?= hour ?></td>
+                        <td style="text-align:center;"><?= name ?></td>
+                        <td style="text-align:center;"><?= contact ?></td>
+                        <td style="text-align:center;"><?= status ?></td>
+                        <td style="text-align:center;"><?= sector ?></td>
+                        <td style="text-align:center;"><?= responsible ?></td>
 					</tr>
 					</thead>
 
@@ -25,7 +30,13 @@
                            if(i % 2 === 0) { color = "silver" } else { color = "light-grey" }
                         ?> 
                          <tr style="background-color:<?= color ?>;">
-                           <td><?= r[0] ?></td><td style="text-align:right;padding:2px;"><?= r[1] ?></td><td style="text-align:right;padding:2px;"><?= r[2] ?></td><td style="text-align:right;padding:2px;"><?= r[3] ?></td><td style="text-align:right;padding:2px;"><?= r[4] ?></td>
+                           <td><?= r[0] ?></td>
+                           <td style="text-align:center;padding:8px;"><?= r[1] ?></td>
+                           <td style="text-align:center;padding:8px;"><?= r[2] ?></td>
+                           <td style="text-align:center;padding:8px;"><?= r[3] ?></td>
+                           <td style="text-align:center;padding:8px;"><?= r[4] ?></td>
+                           <td style="text-align:center;padding:8px;"><?= r[5] ?></td>
+                           <td style="text-align:center;padding:8px;"><?= r[6] ?></td>
                          </tr>
                         <? }) ?>
                    
